@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 export default function Contact() {
-    const queryString = useLocation().search;
+    const queryString = useLocation().search; //the useLocation telll us where we are currently in, in the browser and the search propeerty returns the query strings
     console.log(queryString);
 
     const queryParams = new URLSearchParams(queryString);
