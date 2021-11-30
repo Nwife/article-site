@@ -27,6 +27,7 @@ export const useFetch = (url) => {
         } else {
           setIsPending(false)     
           setError('Could not fetch the data') //catches network error
+          console.log(err.message);
         }
       }
     }
